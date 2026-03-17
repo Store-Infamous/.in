@@ -243,7 +243,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
     <span id="header-ign">Set IGN</span>
   </div>
   <a href="https://discord.gg/DzHfKWrZd4" target="_blank" class="header-btn discord-hide">
-    <svg class="discord-icon" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
     Discord
   </a>
   <button class="header-btn" onclick="toggleCart()">
@@ -371,7 +371,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
     <div id="checkout-content">
       <div class="modal-title">💳 Pay via GPay / UPI</div>
       <div class="modal-sub">Scan the QR code or open UPI app</div>
-      <div id="ign-warn-box" class="ign-warn" style="display:none">⚠️ Pehle apna Minecraft username set karo header mein!</div>
+      <div id="ign-warn-box" class="ign-warn" style="display:none">⚠️ First Enter Your Minecraft Userna</div>
       <div class="qr-wrap"><img id="qr-img" src="" alt="UPI QR" width="200" height="200"/></div>
       <div class="order-summary" id="order-summary"></div>
       <button class="paid-btn" onclick="confirmPayment()" id="paid-btn">✅ I Have Paid</button>
@@ -387,7 +387,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
   <div id="ign-modal">
     <img class="ign-modal-avatar" id="ign-modal-avatar" src="https://minotar.net/avatar/Steve/128" alt="avatar"/>
     <div class="ign-modal-title">Enter your Minecraft IGN</div>
-    <div class="ign-modal-sub">Apna Minecraft username dalo — yahi checkout mein use hoga</div>
+    <div class="ign-modal-sub"></div>
     <div class="ign-input-wrap">
       <input class="ign-input" id="ign-input" type="text" placeholder="e.g. Notch" onkeydown="if(event.key==='Enter')previewIgn()"/>
       <button class="ign-preview-btn" onclick="previewIgn()">👁 Preview</button>
@@ -401,7 +401,7 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
 // ========================================================
 // CONFIG — Replace with your actual values
 // ========================================================
-const UPI_ID = "";          
+const UPI_ID = "rishabhpallati@fam";          
 const UPI_NAME = "InfamousSMP";
 const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1481655672666853618/pg5O_vGSBlxwQvmuq_QRLZWTviRZDYN96R3U7uFd5yEhWaGWVUqE5yIUe8t8rmdyOc4H"; 
 
@@ -419,10 +419,10 @@ const FEATURED = [
 const RANKS = [
   {id:"r-warrior",name:"Warrior",image:IMG+"rank-warrior.png",priceINR:49,priceUSD:"0.59",perks:["/fly command","/back command","2 home locations","100 coins","50k in-game money","Warrior kit"],border:""},
   {id:"r-knight",name:"Elite",image:IMG+"rank-elite.png",priceINR:99,priceUSD:"0.95",perks:["/fly command","/back command","/anvil command","4 home locations","300 coins","100k in-game money","Elite kit"],border:"blue"},
-  {id:"r-elite",name:"Champion",image:IMG+"rank-champion.png",priceINR:99,priceUSD:"1.19",perks:["/fly, /back, /craft, /anvil","Chat colour customization","6 home locations","500 coins","150k in-game money","Champion kit"],border:""},
-  {id:"r-champion",name:"Deadliest",image:IMG+"rank-deadliest.png",priceINR:159,priceUSD:"1.92",perks:["/fly, /back, /craft, /anvil","Chat colour customization","8 home locations","700 coins","200k in-game money","Deadliest kit"],border:"gold",popular:true},
-  {id:"r-legend",name:"boss",image:IMG+"rank-boss.png",priceINR:199,priceUSD:"2.39",perks:["/fly, /back, /craft, /anvil","Custom chat colour","10 home locations","999 coins","300k in-game money","Boss kit","Early access to events"],border:"orange"},
-  {id:"r-ace",name:"Ace",image:IMG+"rank-ace.png",priceINR:299,priceUSD:"3.59",perks:["/fly, /back, /craft, /anvil","Custom chat colour","12 home locations","1199 coins","500k in-game money","Ace ultimate kit","Early access to events"],border:"red"},
+  {id:"r-elite",name:"Champion",image:IMG+"rank-champion.png",priceINR:149,priceUSD:"1.61 ",perks:["/fly, /back, /craft, /anvil","Chat colour customization","6 home locations","500 coins","150k in-game money","Champion kit"],border:""},
+  {id:"r-champion",name:"Deadliest",image:IMG+"rank-deadliest.png",priceINR:199,priceUSD:"2.15",perks:["/fly, /back, /craft, /anvil","Chat colour customization","8 home locations","700 coins","200k in-game money","Deadliest kit"],border:"gold",popular:true},
+  {id:"r-legend",name:"boss",image:IMG+"rank-boss.png",priceINR:249,priceUSD:"2.69",perks:["/fly, /back, /craft, /anvil","Custom chat colour","10 home locations","999 coins","300k in-game money","Boss kit","Early access to events"],border:"orange"},
+  {id:"r-ace",name:"Ace",image:IMG+"rank-ace.png",priceINR:299,priceUSD:"3.23",perks:["/fly, /back, /craft, /anvil","Custom chat colour","12 home locations","1199 coins","500k in-game money","Ace ultimate kit","Early access to events"],border:"red"},
 ];
 
 const PRIME = [
