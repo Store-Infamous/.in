@@ -372,7 +372,12 @@ main{flex:1;overflow-y:auto;height:calc(100vh - 56px)}
       <div class="modal-title">💳 Pay via GPay / UPI</div>
       <div class="modal-sub">Scan the QR code or open UPI app</div>
       <div id="ign-warn-box" class="ign-warn" style="display:none">⚠️ First Enter Your Minecraft Userna</div>
-      <div class="qr-wrap"><img id="qr-img" src="" alt="UPI QR" width="200" height="200"/></div>
+      <div class="qr-wrap"><img id="qr-img" src="" alt="UPI QR" width="170" height="170"/></div>
+<div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1px">UPI ID</div>
+              <div style="font-family:'Rajdhani',sans-serif;font-weight:700;font-size:15px;color:var(--purple-glow)">rishabhpallati@fam</div>
+            </div>
+           
+   
       <div class="order-summary" id="order-summary"></div>
       <button class="paid-btn" onclick="confirmPayment()" id="paid-btn">✅ I Have Paid</button>
       <span class="cancel-link" onclick="closeCheckout()">Cancel</span>
@@ -563,7 +568,7 @@ function openCheckout() {
   warn.style.display = playerIGN ? 'none' : 'block';
 
   const upiStr = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${totalINR}&cu=INR&tn=${encodeURIComponent('InfamousSMP - ' + (playerIGN || 'Player'))}`;
-  document.getElementById('qr-img').src = `https://postimg.cc/nsbCbcD1?size=200x200&data=${encodeURIComponent(upiStr)}&bgcolor=ffffff&color=000000`;
+  document.getElementById('qr-img').src = `https://media.discordapp.net/attachments/1466478404181164092/1483395841258422412/WhatsApp_Image_2026-03-13_at_3.22.07_PM.jpg?ex=69ba6f88&is=69b91e08&hm=87a65f10f769700caef385e4f2d60cc23002577863e617687261d50871ce18cf&=&format=webp&width=341&height=342`;
 
   let html = '<h4>📋 Order Summary</h4>';
   cart.forEach(i => { html += `<div class="order-line"><span>${i.name}</span><span>₹${i.priceINR}</span></div>`; });
