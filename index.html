@@ -568,7 +568,7 @@ function openCheckout() {
   warn.style.display = playerIGN ? 'none' : 'block';
 
   const upiStr = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(UPI_NAME)}&am=${totalINR}&cu=INR&tn=${encodeURIComponent('InfamousSMP - ' + (playerIGN || 'Player'))}`;
-  document.getElementById('qr-img').src = `https://media.discordapp.net/attachments/1484526139992051864/1485169349512921088/WhatsApp_Image_2026-03-13_at_3.22.07_PM.jpg?ex=69c0e33e&is=69bf91be&hm=364de29c814e9d30406fc4cc1e7ab995f3831da33a09f70f55f02d84f7812275&=&format=webp&width=341&height=342`;
+  document.getElementById('qr-img').src = `https://cdn.discordapp.com/attachments/1466478404181164092/1486353455751888977/WhatsApp_Image_2026-03-13_at_3.22.07_PM.jpg?ex=69c53206&is=69c3e086&hm=11bf374a47ad7ff5da233e46d43f950d8c1a6943d191d873f059e2ca0d38b8f7`;
 
   let html = '<h4>📋 Order Summary</h4>';
   cart.forEach(i => { html += `<div class="order-line"><span>${i.name}</span><span>₹${i.priceINR}</span></div>`; });
